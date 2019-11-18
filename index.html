@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="media-quaries.css" />
+	<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Turret+Road|Vibes&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+	<script src="validation.js"></script>
+	<title> Legends of dragons </title>
+</head>
+
+	<body>
+			<!-- <div class="container"> -->
+				<header>
+				
+				 <div class="images">
+				 	<div id="logo">
+					<span> D r a g o n</span>
+					<span> h e r e</span>	
+					</div>
+                                     <div>
+                                        <button type="button" class="button"><img src="changesxema_32.png" style="vertical-align: middle">Change sheme</button>
+                                     </div>
+				 </div>
+
+				 <div class="navigation">
+
+					<div class="buttons">
+						<div class="but1"> <a href="#"> Species </a>
+							<ul type="square" class="species-menu">
+						<li><a href="#">Brass</a></li>
+            					<li><a href="#">Copper</a></li>
+            					<li><a href="#">Bronze</a></li>
+            					<li><a href="#">Silver</a></li>
+            					<li><a href="#">Golden</a></li>
+							</ul>
+
+						</div>
+						<div class="but2"> <a href="#"> Map world </a> </div>
+						<div class="but3"> <a href="#"> Legends </a> </div>
+					</div>
+				 </div>
+				
+				</header>
+
+				 
+
+				 <main>
+
+				<div class="general"> 
+					<div class="content">
+						<p>A dragon is a large, serpent-like legendary creature that appears in the folklore of many cultures around the world. Beliefs about dragons vary drastically by region, but dragons in western cultures since the High Middle Ages have often been depicted as winged, horned, four-legged, and capable of breathing fire. Dragons in eastern cultures are usually depicted as wingless, four-legged, serpentine creatures with above-average intelligence. </p>
+
+						<p>The earliest attested dragons resemble giant snakes. Dragon-like creatures are first described in the mythologies of the ancient Near East and appear in ancient Mesopotamian art and literature. Stories about storm-gods slaying giant serpents occur throughout nearly all Indo-European and Near Eastern mythologies. Famous prototypical dragons include the mušḫuššu of ancient Mesopotamia; Apep in Egyptian mythology; Vṛtra in the Rigveda; the Leviathan in the Hebrew Bible; Python, Ladon, Wyvern, and the Lernaean Hydra in Greek mythology; Jörmungandr, Níðhöggr, and Fafnir in Norse mythology; and the dragon from Beowulf. </p>
+					
+					</div>
+
+					
+					<div class="sidebar">
+						<form>
+						  
+						    <legend>Questionary</legend>
+						 
+						    <h4><label for="name">Name<br></label> <input type="text" id="name"></h4>
+						    <h4><label for="email">E-mail<br></label> <input type="email" id="email"></h4>
+						    <h4><label for="number">Age<br></label> <input type="number" min="12" max="112" id="number"></h4>
+						    <h4><textarea rows="8" cols="20" name="text" placeholder="What do you want to change?"></textarea></h4>
+						 	
+							<h4><input type="submit" id="sub" value="Submit" onclick="check_validation_form()"></h4>
+						</form>
+					</div>
+					
+				</div>
+				<div class="clear"></div>
+				</main>
+
+				<footer id="myfooter">
+					<table>
+					  <caption>Thank you for visiting our site!</caption>
+					  <tfoot>
+					  	<tr>
+					  	<th colspan="3"> Kateryna Pavlenko 2019 </th>
+					  	</tr>
+					  </tfoot>
+					  <tbody>
+					    <tr>
+					      <td>11,000 views</td>
+					      <td rowspan="3" class="contact"> Our contacts:<br>email: glinka1457@gmail.com<br>telephone: 054-222-73-33</td>
+					    </tr>
+					    <tr>
+					      <td>2,800 forwarding</td>
+					    </tr>
+					    <tr>
+					      <td>500 edits</td>
+					    </tr>
+					  </tbody>
+					</table>
+					
+				</footer>
+			<!-- </div> -->
+
+<script>
+    //var div1 = document.getElementById("menulist");
+   //let style_body_old = getComputedStyle(div1).fontFamily;
+
+  var footermy=document.getElementById("myfooter");//знаходимо елемент футера
+  var style = document.createElement('style');//створюємо новий елемент стиля для документа
+  let left = 0;
+
+   //метод плавно рухає кнопку вправо і назад
+/*
+   let interval=100;
+ 
+   document.querySelector('.button').addEventListener('click',e => {
+    if(left > 0){  // если left больше нуля значит двигаем вправо
+        interval = setInterval(() => {
+            left--;
+            e.target.style.left = left + 'px';
+            if(left <= 0) clearInterval(interval);  // если left меньше нуля то очищаем интервал
+        },0);
+        document.body.style.background='url(https://wallpapercave.com/wp/XSDg0fh.jpg) fixed';
+        footermy.classList.remove('newfooter');//видаляємо класс зі списку класів, що використовуються для елемента
+        document.documentElement.removeChild(style); //видаляємо елемент стиля
+    }
+    else{  // иначе двигаем влево
+        interval = setInterval(() => {
+            left++;
+            e.target.style.left = left + 'px';
+            if(left >= 760) clearInterval(interval);  // если left больше 760 то очищаем интервал
+        },0);
+        document.body.style.background='url(https:/wallpapercave.com/wp/wp3675453.jpg) fixed'; //змінюємо фоновий малюнок на новий
+        footermy.classList.add('newfooter');
+        style.innerHTML = '*{color: red !important; font-family: Trebuchet MS, Arial, Times New Roman;}';//переписуємо колір тексту для всього документу
+        document.documentElement.appendChild(style); //додаємо елемент стиля до всього документу
+      }
+   });
+  */
+
+  //метод меттєво переміщує кнопку вправо і назад 
+
+  document.querySelector('.button').addEventListener('click',e => {  // вешаем клик на кнопку с классом but
+ 
+    if(e.target.classList.contains('active')){  // если кнопка содержит класс active (это скажет о том что по кнопке уже был сделан клик и она находится на отметке 60px)
+        e.target.style.left = 0 + 'px';  // то двигаем кнопку на отметку 0px
+        e.target.classList.toggle('active');  // удаляем класс active
+        document.body.style.background='url(https://wallpapercave.com/wp/XSDg0fh.jpg) fixed';
+       // div1.setAttribute('style', '');
+        footermy.classList.remove('newfooter');//видаляємо класс зі списку класів, що використовуються для елемента
+        document.documentElement.removeChild(style); //видаляємо елемент стиля
+ 
+    }
+    else{  // в противном случае
+        e.target.style.left = 760 + 'px';  // двигаем кнопку на отметку 760px
+        e.target.classList.toggle('active');  // и добавляем класс active
+        document.body.style.background='url(https:/wallpapercave.com/wp/wp3675453.jpg) fixed'; //змінюємо фоновий малюнок на новий
+       // div1.setAttribute('style', 'font-family: Trebuchet MS, Arial, Times New Roman; color: red;'); //змінюємо шрифт тексту меню
+        footermy.classList.add('newfooter');
+        style.innerHTML = '*{color: red; }';//переписуємо колір тексту для всього документу
+        document.documentElement.appendChild(style); //додаємо елемент стиля до всього документу
+    }
+   });
+
+</script>
+
+</body>

@@ -1,0 +1,104 @@
+@media only screen and (max-width: 992px) {
+	
+	header {
+		width: 800px;
+	}
+
+	.sidebar {
+	float: right;
+	width: 150px;
+	}
+
+	.content {
+	float: left;
+	width: 650px;
+	}
+	main {
+		width: 800px;
+	}
+	.general {
+	width: 800px; 
+	}
+
+	footer {
+		width: 800px;
+	}
+} 
+
+@media only screen and (max-width: 768px) { /*для середніх - планшетних*/
+	header {
+		width: 500px;
+
+	}
+
+	div#logo {
+		position: absolute;
+		margin-left: 225px;
+
+	}
+	
+
+	.sidebar {
+	width: 500px;
+	height: 150px;
+	}
+
+	h2 {
+	width: 300px;
+	text-align: center;
+	word-wrap: normal;
+	}
+
+	.content {
+	width: 500px;
+	}
+
+	.general {
+	width: 500px; 
+	}
+
+	footer {
+		height: 100px;
+	}
+} 
+
+
+@media only screen and (max-width: 480px) { /*для мобільних пристроїв*/
+	header {
+		width: 320px;
+
+	}
+
+	div#logo {
+		position: absolute;
+		margin-left: 135px;
+	}
+	
+	.sidebar {
+	width: 100%;
+	}
+
+	h2 {
+
+	padding-top: 20px;
+	text-align: center;
+	word-wrap: normal;
+	}
+
+	.content {
+	background: #FF9D69;
+	width: 320px;
+	font-size: 16px;
+	}
+
+	.general {
+	width: 100%; 
+	}
+
+	footer {
+		
+		padding-bottom: 50px;
+	}
+
+	
+} 
